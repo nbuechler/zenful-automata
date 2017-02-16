@@ -1,15 +1,14 @@
 #!/bin/bash
 
 start_ample_affect_exhibit()
-{ 
+{
     cd ~/src/ample-affect-exhibit
-    . venv/bin/activate
     npm start dev >~/logfiles/ample_affect_exhibit_logfile.txt 2>&1 </dev null &
     return 0
 }
 
 start_hungry_interceptor()
-{ 
+{
     cd ~/src/hungry-interceptor
     . venv/bin/activate
     python app/runserver.py 5000 >~/logfiles/hungry_interceptor_logfile.txt 2>&1 </dev/null &
@@ -53,4 +52,3 @@ run()
 }
 
 run
-
